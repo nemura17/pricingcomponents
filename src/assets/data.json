@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "planName": "Basic",
+        "monthlyPrice": 199.99,
+        "storage": "500 GB Storage",
+        "usersAllowed": "2 Users Allowed",
+        "sendingUsage": "Send up to 3 GB",
+        "learnMore": "Learn More"
+    },
+
+    {
+        "id": 2,
+        "planName": "Professional",
+        "monthlyPrice": 249.99,
+        "storage": "1 TB Storage",
+        "usersAllowed": "5 Users Allowed",
+        "sendingUsage": "Send up to 10 GB",
+        "learnMore": "Learn More"
+    },
+
+    {
+        "id": 3,
+        "planName": "Master",
+        "monthlyPrice": 399.99,
+        "storage": "2 TB Storage",
+        "usersAllowed": "10 Users Allowed",
+        "sendingUsage": "Send up to 20 GB",
+        "learnMore": "Learn More"
+    }
+]

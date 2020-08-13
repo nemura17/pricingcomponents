@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(240, 78%, 98%);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  background-image: url(/images/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+body::after {
+  content: '';
+  background-image: url(/images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.app {
+  text-align: center;
+}
+
+.headerText {
+  margin-top: -20px;
+  margin-bottom: 50px;
+  color: hsl(233, 13%, 49%);
+}
+
+.plansContainer {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.pricingComponent {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  color: hsl(232, 13%, 33%);
+}
+
+
+.pricingComponent:nth-child(2) {
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  border-color: white;
+  transform: scale(1.13);
+}
+
+.pricingComponent:nth-child(2) > * {
+  transform: scale(​0.8695652173913044);
+}
+
+.pricingComponent:nth-child(2) button {
+  background-image: none;
+  background-color: white;
+  color: hsl(237, 63%, 64%);
+}
+
+.pricingComponent:nth-child(2) ul, .pricingComponent:nth-child(2) li, .pricingComponent:nth-child(2) h4 {
+  border-color: #8d91e9;
+  color: white;
+}
+
+.pricingComponent h4 {
+  margin-top: 0;
+  color: hsl(233, 13%, 49%);;
+}
+
+.pricingComponent p {
+  font-size: 4em;
+  margin: 0;
+}
+
+.pricingComponent ul {
+  padding: 0;
+  list-style-type: none;
+  border-top: 1px solid hsl(234, 14%, 74%);
+}
+
+.pricingComponent li {
+  padding: 15px 0;
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+  color: hsl(233, 13%, 49%);
+  font-size: 14px;
+}
+
+.pricingComponent button {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pricingComponent button:hover {
+  background-color: hsl(240, 78%, 98%);
+  color: hsl(237, 63%, 64%);
+  transition-duration: 0.5s;
+  
+}
+
+.pricingComponent:nth-child(2) button:hover {
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 1086px) {
+
+  .headerText {
+    margin-top: 30px;
+  }
+
+  .plansContainer {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    max-width: 80%;
+    width: 568px;
+  }
+
+  .pricingComponent {
+    margin-bottom: 20px;
+  }
+
+  .pricingComponent:nth-child(2) {
+    transform: scale(1);
+  }
+}

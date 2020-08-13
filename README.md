@@ -1,3 +1,5 @@
+<b> You can view it here </b> - https://pricingcomponents.vercel.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
